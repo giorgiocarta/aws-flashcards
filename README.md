@@ -8,19 +8,32 @@ Enjoy.
 
 ## Installation
 ```bash
-git clone github@...  
-cd  ...
+git clone git@github.com:donedeal-giorgio/aws-flashcards.git
+cd  cd aws-falshcards
+# create virtual env
 python3 -m venv .venv
 
+# activate it
+source ./.venv/bin/python
+
+# install requirements
+pip install -e .
 ```
 
 ## Start the app with
 
+Only the first time:
 ```bash
 python manage.py migrate
 python manage.py loaddata ./resources/s3.json
+```
+
+Start the app with:
+```
 python manage.py runserver
 ```
+
+Open the browser at http://0.0.0.0:8080
 
 ## Run with docker
 
