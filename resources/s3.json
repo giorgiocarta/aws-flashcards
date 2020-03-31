@@ -1,0 +1,11 @@
+[
+  {
+    "model": "card.card",
+    "pk": 1,
+    "fields": {
+      "question": "Sample Question",
+      "answer": "Sample Answer",
+      "category": "s3"
+    }
+  }
+]
