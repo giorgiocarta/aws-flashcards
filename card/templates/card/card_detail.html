@@ -1,0 +1,9 @@
+{% extends "card/base.html" %}
+{% block content %}
+    <hr>
+    <h1>{{ card.question }}</h1>
+    <p>
+    {{ card.answer }}
+    </p>
+    <a type="button" class="btn btn-outline-info btn-sm"  href="{% url 'cards' card.category %} ">Back to {{ card.category }} cards</a>
+{% endblock content %}}
