@@ -2,8 +2,344 @@
   {
     "model": "card.card",
     "fields": {
-      "question": "What is a test question for S3",
-      "answer": "A test answer for S3",
+      "question": "What are the three main categories of storage?",
+      "answer": "File Storage (e.g. Amazon EFS), Object storage (S3, Glacier), Block storage (EBS)",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What does SE stands for?",
+      "answer": "Simple Storage Service",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is a object in S3?",
+      "answer": "It's simply a file and metadata. ",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is the level of availability for S3?",
+      "answer": "99.99% availability (i.e. 1 hour unavailable per year)",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is the level of durability for S3?",
+      "answer": "99.999999999% durability - objects are replicated across 3 AZ, in the same region by default.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is the level of durability for S3?",
+      "answer": "99.999999999% durability (11 x 9s) - objects are replicated across 3 AZ, in the same region by default.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What are the capacity limit for S3?",
+      "answer": "None, S3 has illimited capacity",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "Common S3 use cases",
+      "answer": "Online back-up, Disaster recovery (DR), Main Data storage (e.g. Dropbox), Media hosting (images over the web)",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What operation are permitted on object on S3?",
+      "answer": "Only create and delete (put and get API calls). You cannot edit objects on S3.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is a S3 bucket and what are the limits?",
+      "answer": "A bucket is a namespace for S3 object. You can create a max of 100 bucket per account.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What are the restriction for bucket names?",
+      "answer": "The name must be unique globally. 3 to 63 characters (letters, number, hyphens, dots). Uppercase and underscore are not permitted.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "How is an S3 object identified",
+      "answer": "An object is identified by the object key.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What are the file types allowed to upload on S3?",
+      "answer": "An object on S3 can be any kind of file or data.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is max size of an object on S3?",
+      "answer": "5TB",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is the durability for the Standard storage class and Glacier?",
+      "answer": "All storage class have 9.999999999% of durability. Different storage classes differ for the availability.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What are the types of storage classes available on AWS?",
+      "answer": "Standard - 99.99%; Standard Infrequent Access (99.9%); Intelligent Tiering (99.9%); One-Zone Infrequent Access 99.5%; Amazon Glacier (N/a)",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What are the characteristics of Standard-IA and One Zone IA?",
+      "answer": "Min 30 days storage charge per object. Min capacity charge is 128Kb. Retrieval charges; 1AZ-IA is a 20% less expensive",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is AWS S3 Glacier?",
+      "answer": "A cold storage for archiving objects. Retrieval time is 3 to 5 hours, low storage charges. Min 90 days storage charges.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "Can you upload directly to S3 Glacier?",
+      "answer": "Yes, in addition you can setup a life-cycle policy.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is a life-cycle policy on S3?",
+      "answer": "You can use lifecycle policies to define actions you want Amazon S3 to take during an object's lifetime (for example, transition objects to another storage class, archive them, or delete them after a specified period of time).",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "Can you have a lifecycle policy for an object?",
+      "answer": "No, lifecycle policies are always set at the bucket level and apply to existing and new objects in that bucket.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is S3 Intelligent Tiering",
+      "answer": "S3 Intelligent-Tiering is the first cloud object storage class that delivers automatic cost savings by moving data between two access tiers — frequent access and infrequent access — when access patterns change, and is ideal for data with unknown or changing access patterns. Its suitable for object larger than 128Kb.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "How much does it cost the move of object between Standard and IA storage class?",
+      "answer": "Nothing, there are no fees associated for moving objects between tiers.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "I have a bucket with many small object (e.g. <100Kb). Can I use IT?",
+      "answer": "No, IT only applies to objects that are less than 128Kb. Smaller object are always charged at the rate of the Standard frequent access.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "Are S3 object mutable?",
+      "answer": "No, S3 objects are immutable, can only be replaced, deleted or created. ",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "At what level can you turn on S3 versioning?",
+      "answer": "Only at the bucket level. When turned on, each object in the bucket is given a version id. ",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "How can I delete an object if versioning in turned on?",
+      "answer": "To permanently delete the object you also have to specify the version ID. Deleting an object with a simple delete, will only create a new version of that object with a new version Id and a 'delete' marker. The object won't be visible (e.g. with a GET) until that version id is deleted.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "Some organisations required data to be encrypted. How can I do this with S3?",
+      "answer": "1. Encrypt the data before I send to S3. 2. Have S3 to encrypt the data for you whe it arrives into S3.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is client side encryption?",
+      "answer": "When the data is encrypted before it reaches S3. You can use your own library, or use the AWS SDK. In addition, you can chose to use AWS KMS to manage the encryption keys or generate the keys yourself.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is server side encryption (SSE)?",
+      "answer": "All data are encrypted after it reaches S3. S3 separetely stores the encrypted data and the encryption keys (KMS)",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What options do you have when using Server side encryption (SSE)?",
+      "answer": "AWS master keys for S3; AWS-provided keys from AWS KMS; provide your own keys which are sent along with the data (SSE-C).",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "Is encryption a bucket or object feature?",
+      "answer": "Object and bucket. You can set encryption per individual object, but also encrypt the whole bucket (applies only to new files)",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is S3 cross-region replication (CRR)?",
+      "answer": "Cross-Region replication (CRR) is used to copy objects across Amazon S3 buckets in different AWS Regions",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is S3 same-region replication (SRR)?",
+      "answer": "Same-Region replication (SRR) is used to copy objects across Amazon S3 buckets in the same AWS Region.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "Does replication create an identical object including the metadata?",
+      "answer": "Yes. You can use replication to make copies of your objects that retain all metadata, such as the original object creation time and version IDs. This capability is important if you need to ensure that your replica is identical to the source object",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "Can I use replication to store directly on glaciar?",
+      "answer": "Yes, you can use replication to directly put objects into S3 Glacier, S3 Glacier Deep Archive, or another storage class in the destination bucket. You can also replicate your data to the same storage class and use lifecycle policies on the destination bucket to move your objects to a colder storage class as it ages.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is owner override in the context of cross region replication?",
+      "answer": "it is used to maintain object copies under different ownership — Regardless of who owns the source object, you can tell Amazon S3 to change replica ownership to the AWS account that owns the destination bucket. This is referred to as the owner override option. You can use this option to restrict access to object replicas.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What is S3 Replication Time Control (S3 RTC) and how can it be used?",
+      "answer": "ou can use S3 Replication Time Control (S3 RTC) to replicate your data in the same AWS Region or across different Regions in a predictable time frame. S3 RTC replicates 99.99 percent of new objects stored in Amazon S3 within 15 minutes (backed by a service level agreement).",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "When Cross-Region replication can be useful?",
+      "answer": "Meet compliance requirements (e.g a bank requires you to store files 100Km apart); Minimise latency across the globe (e.g. customer access your files from different geographical regions); Increase operational efficiency. (If you have compute clusters in two different AWS Regions that analyze the same set of objects, you might choose to maintain object copies in those Regions.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "When Single-Region replication can be useful?",
+      "answer": "Log consolidation or aggregation, have same data between production and test accounts;",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "What are the requirements for S3 SRR and CRR?",
+      "answer": "Permissions on buckets (i.e. IAM roles); Both source and destination buckets must have versioning enabled.",
+      "category": 2
+    }
+  },
+  {
+    "model": "card.card",
+    "fields": {
+      "question": "Can you use CRR if a bucket if versioning is not enabled",
+      "answer": "No, Both source and destination buckets must have versioning enabled.",
+      "category": 2
+    }
+  },
+   {
+    "model": "card.card",
+    "fields": {
+      "question": "",
+      "answer": "",
       "category": 2
     }
   }
