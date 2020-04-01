@@ -4,7 +4,7 @@
     "fields": {
       "question": "What is a hybrid environment?",
       "answer": "A public cloud + a Data center",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -12,7 +12,7 @@
     "fields": {
       "question": "What is private cloud example?",
       "answer": "An example of a private cloud deployment is where you maintain your own servers and infrastructure that hosts your applications and data.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -20,7 +20,7 @@
     "fields": {
       "question": "What is hybrid model?",
       "answer": "A Hybrid model is where you have some applications or servers based on business need running in a public cloud infrastructure like Microsoft Azure or Amazon Web Services.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -28,7 +28,7 @@
     "fields": {
       "question": "What is a AWS region?",
       "answer": "A Region is a unit of AWS’s global deployment. When you (as a customer) access an AWS service,\n\nyou are accessing a specific AWS region (e.g. EU-WEST-1 i.e. Ireland) although you may originate your access from anywhere in the world.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -36,7 +36,7 @@
     "fields": {
       "question": "What is a AWS AZ?",
       "answer": "Each AZ is comprised of one or more physically-adjacent AWS data centres. There are typically between 2 - 6 AZs per Region, 3 on average.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -44,7 +44,7 @@
     "fields": {
       "question": "Are AZ physically isolated from each other?",
       "answer": "Yes, they have separate power, Internet connectivity, nature risks etc.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -52,7 +52,7 @@
     "fields": {
       "question": "How are AZ  connected with each other?",
       "answer": "They are connected using low latency, high throughput, and highly redundant networking",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -60,7 +60,7 @@
     "fields": {
       "question": "What are the best architecture practices regarding AZ?",
       "answer": "1. Always design on the basis that a single AZ could go down. 2. Enable fail-over to resources in another AZ in the same region.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -68,7 +68,7 @@
     "fields": {
       "question": "Example of AWS service that only requires region setup",
       "answer": "S3 - data are automatically replicated to different AZs in the same region",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -76,7 +76,7 @@
     "fields": {
       "question": "Example of AWS services that require region and AZ setup",
       "answer": "EC2, RDS. Customer must configure for high availability, fault tolerance and scalability/elasticity",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -84,7 +84,7 @@
     "fields": {
       "question": "What does fault tolerance mean?",
       "answer": "Fault tolerance is the property that enables a system to continue operating properly in the event of the failure",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -92,7 +92,7 @@
     "fields": {
       "question": "What does high availability mean?",
       "answer": "High availability is a characteristic of a system, which aims to ensure an agreed level of operational performance, usually uptime, for a higher than normal period. Modernization has resulted in an increased reliance on these systems.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -100,7 +100,7 @@
     "fields": {
       "question": "Can AWS by itself initiate transfer of data between regions?",
       "answer": "AWS will never by itself initiate a transfer of your data to another region. Your data stays within a region unless you decide otherwise.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -108,7 +108,7 @@
     "fields": {
       "question": "Can AWS by itself initiate transfer of data between regions?",
       "answer": "AWS will never by itself initiate a transfer of your data to another region. Your data stays within a region unless you decide otherwise. Only a customer can initiate a transfer of data to another region.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -116,7 +116,7 @@
     "fields": {
       "question": "What services use Amazon Edge Locations?",
       "answer": "CloudFront, Route 53, AWS WAF, AWS Shield",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -124,7 +124,7 @@
     "fields": {
       "question": "What is AWS cloud front?",
       "answer": "Amazon CloudFront is a global CDN that provides a local cache of content (e.g. files) close to the user",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -132,7 +132,7 @@
     "fields": {
       "question": "Does AWS have different API per region?",
       "answer": "Yes, e.g. https://s3.eu-west-1.amazon.aws.com is the entry point for the Amazon S3 region in Ireland.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -140,7 +140,7 @@
     "fields": {
       "question": "How many different methods there are to call an AWS API endpoint?",
       "answer": "4 methods. 1. GUI Console, 2. CLI, 3. SDK, 4. HTTP GET Requests.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -148,7 +148,7 @@
     "fields": {
       "question": "What are the actions that require root access?",
       "answer": "Changing your AWS support plan, Changing payment options, Closing account, Request pentest.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -156,7 +156,7 @@
     "fields": {
       "question": "What the languages available for the AWS SDK?",
       "answer": "Java, Python, PHP, Ruby, Go, C++, JavaScript, Node.js",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -164,7 +164,7 @@
     "fields": {
       "question": "What the languages available for the AWS SDK?",
       "answer": "Java, Python, PHP, Ruby, Go, C++, JavaScript, Node.js",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -172,7 +172,7 @@
     "fields": {
       "question": "When calling the AWS APIs, are the user credentials used for authentication and authorisation?",
       "answer": "User credentials only allow for the API calls to be authenticated. There is completely separate authorization layer",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -180,7 +180,7 @@
     "fields": {
       "question": "How many methods can be used to connect to AWS?",
       "answer": "1. Connect over public internet. 2. VPN. 3. Using AWS Direct Connect (dedicated private connection)",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -188,7 +188,7 @@
     "fields": {
       "question": "Some example of hybrid cloud?",
       "answer": "Migration to cloud, Workloads retained on-prem and in cloud, Using the cloud for certain services (e.g. S3), Cloudbursting",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -196,7 +196,7 @@
     "fields": {
       "question": "How can private infrastructure are usually connected to the cloud in hybrid envs?",
       "answer": "AWS managed VPN, Software VPN deployed inside AWS, Dedicated AWS Direct connect (costly)",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -204,7 +204,7 @@
     "fields": {
       "question": "What is a VPN and what options are available to AWS customers?",
       "answer": "Virtual Private Network. 1. AWS managed-VPN (IPSEC), 2. Third party software VPN appliance you deploy\ninside AWS",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -212,7 +212,7 @@
     "fields": {
       "question": "Does the AWS managed VPN support redundant connections?",
       "answer": "Yes. AWS managed-VPN supports multiple redundant connections.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -220,7 +220,7 @@
     "fields": {
       "question": "What is AWS Direct Connect",
       "answer": "A private connection between on-prem and AWS, supports 1 GBit and 10 GBit connections. Allows routing between private networks in your data centre and private virtual network (AWS VPC) in AWS.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -228,7 +228,7 @@
     "fields": {
       "question": "Can I use AWS Direct Connect to connect to S3?",
       "answer": "yes, allows private routing from your data-centre to region-level AWS public endpoint services, such as S3.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -236,7 +236,7 @@
     "fields": {
       "question": "What are the 5 pillars of a well architected framework",
       "answer": "Security, Reliability, Performance, Cost Optimisation, Operational excellence.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -244,7 +244,7 @@
     "fields": {
       "question": "What the key concepts when create architectures with AWS?",
       "answer": "High-availability,  Redundancy/automatic fail-over, Automatic scaling-up of resources/Elasticity, Durability of data. Deploying infrastructure as code, Agility/flexibility/speed",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -252,7 +252,7 @@
     "fields": {
       "question": "What is the shared responsibility model?",
       "answer": "AWS is responsible for security of the cloud, Customer is responsible for security in the cloud",
-      "category": "cloud"
+      "category": 1
     }
   },
    {
@@ -260,7 +260,7 @@
     "fields": {
       "question": "How many price models AWS have?",
       "answer": "Pay as you go, Reserved, some services offer a tiered pricing (e.g. the more you use, the less you pay - e.g. S3)",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -268,7 +268,7 @@
     "fields": {
       "question": "What are the key elements that affect price",
       "answer": "Region, per hour charges, per API call, I/O charges, Storage charges, etc.",
-      "category": "cloud"
+      "category": 1
     }
   },
   {
@@ -276,7 +276,7 @@
     "fields": {
       "question": "What the options available for aws support?",
       "answer": "Basic (No support), Developer (business-hours email), Business (24/7 email phone), Enterprise (arch guidance)",
-      "category": "cloud"
+      "category": 1
     }
   }
 ]

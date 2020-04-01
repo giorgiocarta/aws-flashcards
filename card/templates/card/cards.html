@@ -1,7 +1,6 @@
 {% extends "card/base.html" %}
 {% block content %}
-    <h1 class="mb-3"> {{ view.kwargs.category }} flashcards ({{ page_obj.paginator.count }}) </h1>
-
+    <h1 class="mb-3"> {{ view.category.name }} flashcards ({{ page_obj.paginator.count }}) </h1>
 
     {% for card in cards %}
 
@@ -12,8 +11,8 @@
         <div class="col-sm-5 mb-3 mr-1">
             <div class="card" style="max-width: 18rem;">
                 <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted">Category: {{ card.category }}</h6>
-                    <h5 class="card-title"><a href="{% url "card-detail" card.category card.id %}">{{ card.question }}</a></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Category: {{ card.category.name }}</h6>
+                    <h5 class="card-title"><a href="{% url "card-detail" card.category.id card.id %}">{{ card.question }}</a></h5>
                     <div class="collapse" id="viewAnswer-{{ card.id }}">
                         <p class="card-text mb-4">{{ card.answer }}</p>
                     </div>

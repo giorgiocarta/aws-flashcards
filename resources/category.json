@@ -1,0 +1,26 @@
+[
+  {
+    "model": "card.category",
+    "pk": 1,
+    "fields": {
+      "name": "cloud",
+      "description": "Generic cloud question"
+    }
+  },
+  {
+    "model": "card.category",
+    "pk": 2,
+    "fields": {
+      "name": "s3",
+      "description": "Simple Storage service"
+    }
+  },
+  {
+    "model": "card.category",
+    "pk": 3,
+    "fields": {
+      "name": "ec2",
+      "description": "Elastic Computing services"
+    }
+  }
+]
