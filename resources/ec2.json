@@ -2,9 +2,9 @@
   {
     "model": "card.card",
     "fields": {
-      "question": "What is a test question for S3",
+      "question": "What is a test question for EC2",
       "answer": "A test answer for S3",
-      "category": 2
+      "category": 3
     }
   }
 ]
