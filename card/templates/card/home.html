@@ -2,6 +2,7 @@
 {% block content %}
     <h1>Chose the topic</h1>
 
+    <a type="button" class="btn btn-primary" href="{% url 'cards' 'cloud' %} ">S3</a>
     <a type="button" class="btn btn-primary" href="{% url 'cards' 's3' %} ">S3</a>
     <a type="button" class="btn btn-primary" href="{% url 'cards' 'ec2' %} ">EC2</a>
     <a type="button" class="btn btn-primary" href="{% url 'cards' 'EMR' %} ">EMR</a>
