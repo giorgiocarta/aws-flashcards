@@ -1,10 +1,9 @@
 [
   {
     "model": "card.card",
-    "pk": 1,
     "fields": {
-      "question": "Sample Question",
-      "answer": "Sample Answer",
+      "question": "What is a test question for S3",
+      "answer": "A test answer for S3",
       "category": "s3"
     }
   }

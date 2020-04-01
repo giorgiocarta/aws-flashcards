@@ -5,7 +5,8 @@ migrate:
 
 
 loaddata:
-	python manage.py loaddata ./resources/cards.json
+	python manage.py loaddata ./resources/cloud.json
+	python manage.py loaddata ./resources/s3.json
 
 
 prepdb: migrate loaddata
