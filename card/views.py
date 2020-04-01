@@ -7,6 +7,16 @@ from django.views.generic import (
 )
 
 
+def random_card(request: HttpRequest) -> HttpResponse:
+	context = {
+		'card': Card.objects.order_by('?').first(),
+	}
+	return render(
+		request=request,
+		template_name='card/random_card.html',
+		context=context)
+
+
 def about(request: HttpRequest) -> HttpResponse:
 	context = {'title': 'about'}
 	return render(
