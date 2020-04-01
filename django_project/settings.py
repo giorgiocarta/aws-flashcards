@@ -33,7 +33,7 @@ SECRET_KEY = 'im4*ng+-1co%p0n=30jb6vtq4$!cv3q8x@mhk3u^6lfno995(n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ["0.0.0.0"]
+ALLOWED_HOSTS = ["0.0.0.0","127.0.0.1"]
 
 # Application definition
 
