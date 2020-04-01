@@ -1,3 +1,13 @@
+WIP - Done:
+
+1. Generic AWS Cards questions
+2. S3 cards (almost done)
+
+To do:
+1. Ec2
+2. etc.
+3. etc.
+
 # AWS Flashcards
 
 Simple django website providing a collection of flashcards to practice for the aws associate certification exam.
