@@ -1,9 +1,11 @@
-WIP - Done:
+# This is WIP Repo
+
+## Done:
 
 1. Generic AWS Cards questions
 2. S3 cards (almost done)
 
-To do:
+## To do:
 1. Ec2
 2. etc.
 3. etc.
