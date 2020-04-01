@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
 	name='aws-flashcards',
-	version='0.0.2',
+	version='0.0.3',
 	packages=[''],
 	url='https://github.com/donedeal-giorgio/aws-flashcards.git',
 	license='MIT',

@@ -1,0 +1,27 @@
+{% extends "card/base.html" %}
+{% block content %}
+    <hr>
+    <div class="col-sm-11 mb-3 mr-1">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Category: {{ card.category.name }}</h6>
+                <h5 class="card-title"><a
+                        href="{% url "card-detail" card.category.id card.id %}">{{ card.question }}</a></h5>
+                <div class="collapse" id="viewAnswer-{{ card.id }}">
+                    <p class="card-text mb-4">{{ card.answer }}</p>
+                </div>
+
+                <a class="btn btn-outline-info btn-sm" data-toggle="collapse" href="#viewAnswer-{{ card.id }}"
+                   role="button"
+                   aria-expanded="false" aria-controls="collapseExample">
+                    View Answer</a>
+            </div>
+        </div>
+    </div>
+
+
+    <a type="button" class="btn btn-info btn-sm" href="{% url 'cards' card.category.pk %} ">Go
+        to {{ card.category }} cards</a>
+    <a type="button" class="btn btn-info btn-sm" href="{% url 'card-random' %} ">Next</a>
+
+{% endblock content %}}
