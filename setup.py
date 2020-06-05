@@ -12,7 +12,7 @@ setup(
 	author='Giorgio Carta',
 	install_requires=[
 		"asgiref==3.2.3",
-		"Django==3.0.3",
+		"Django==3.0.7",
 		"django-crispy-forms==1.8.1",
 		"django-environ==0.4.5",
 		"django-fsm==2.7.0",
