@@ -17,7 +17,7 @@ setup(
 		"django-environ==0.4.5",
 		"django-fsm==2.7.0",
 		"django-fsm-admin==1.2.4",
-		"Pillow==7.0.0",
+		"Pillow==8.2.0",
 		"pytz==2019.3",
 		"sqlparse==0.3.0",
 		"psycopg2==2.8.4"
